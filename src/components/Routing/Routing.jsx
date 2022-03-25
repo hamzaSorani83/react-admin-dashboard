@@ -1,18 +1,17 @@
 import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
 
-import Dashboard from './pages/Dashboard';
-import Customers from './pages/Customers';
+import Dashboard from '../pages/Dashboard'
+import Customers from '../pages/Customers'
+
 
 export default function Routing() {
   return (
-    <div>
-      <BrowserRouter>
+    <React.Fragment>
         <Routes>
           <Route path='/' element={<Dashboard/>}></Route>
           <Route path='/customers' element={ <Customers /> }></Route>
         </Routes>
-      </BrowserRouter>
-    </div>
+    </React.Fragment>
   )
 }

@@ -1,1 +1,3 @@
-- install boxicons: npm install boxicons --save
+- Boxicons is a free collection of carefully crafted open source icons
+- https://boxicons.com/
+- cdn : 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' 
