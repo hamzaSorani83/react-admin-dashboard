@@ -1,0 +1,1 @@
+- install boxicons: npm install boxicons --save
