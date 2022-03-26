@@ -1,8 +1,7 @@
 import React from 'react'
-import { Routes,Route } from 'react-router-dom';
-
 import Dashboard from '../pages/Dashboard'
 import Customers from '../pages/Customers'
+import { Routes,Route } from 'react-router-dom';
 
 
 export default function Routing() {

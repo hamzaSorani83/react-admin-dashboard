@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     height: var(--topnav-height);
+    gap: 0 20px;
 }
 
 .topnav__search {
@@ -68,6 +69,10 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
+}
+
+.topnav__right-user__image>i {
+    font-size: 2.5rem;
 }
 
 .topnav__right-user__image>img {
