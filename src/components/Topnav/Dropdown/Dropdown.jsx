@@ -33,7 +33,6 @@ export default function Dropdown( props ) {
       <div ref={dropdownContentEl} className="dropdown__content">
         {
           props.contentData && props.renderItems ? props.contentData.map( ( item,index ) => {
-            console.log(item.content);
             return props.renderItems(item, index);
           })
           : ''

@@ -43,8 +43,6 @@ const renderUserMenu = (item, index) => {
   );
 };
 
-
-
 export default function Topnav() {
   return (
     <div className="topnav">

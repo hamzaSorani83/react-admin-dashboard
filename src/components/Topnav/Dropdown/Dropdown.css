@@ -35,7 +35,7 @@ div.dropdown__content {
     top: calc(100% + 5px);
     right: 0;
     width: max-content;
-    max-width: 400px;
+    max-width: 330px;
     background-color: var(--main-bg);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);

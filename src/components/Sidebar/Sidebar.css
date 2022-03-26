@@ -1,26 +1,79 @@
 .sidebar {
-    min-width: var(--sidebar-width);
-    height: 100vh;
+    width: var(--sidebar-width);
+    min-height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     background-color: var(--main-bg);
     box-shadow: var(--box-shadow);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    transition: all .5s;
+    padding-left: 30px;
+}
+
+.sidebar.close span {
+    opacity: 0;
+}
+
+.sidebar.open span {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+     :root {
+        --sidebar-width: 100px;
+    }
+    .sidebar span {
+        opacity: 0;
+    }
+    .sidebar.open span {
+        opacity: 1 !important;
+    }
 }
 
 .Sidebar_Logo {
     height: 150px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    transition: all .5s;
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    min-height: 100vh;
+    background-color: var(--second-color);
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        padding-left: 10px;
+    }
 }
 
 .Sidebar_Logo>img {
     height: 45px;
 }
 
-.Sidebar_Item {
-    padding: 0 20px;
+.Sidebar_Logo>i {
+    font-size: 3.25rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.Sidebar_Logo>span {
+    color: var(--txt-color);
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 20px;
+    word-spacing: -1px;
 }
 
 .Sidebar_Item_Inner {
@@ -48,4 +101,27 @@
     border-radius: var(--border-radius);
     background-image: linear-gradient( to right, var(--main-color), var(--second-color));
     color: var(--txt-white);
+    position: relative;
+}
+
+.active .Sidebar_Item_Inner::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0px var(--second-color);
+}
+
+.active .Sidebar_Item_Inner::after {
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0px var(--second-color);
 }
