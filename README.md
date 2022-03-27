@@ -1,5 +1,5 @@
 # React Admin Dashboard with Multiple Themes | React Admin Panel CSS | ReactJS
-- live demo: 
+- live demo: http://h-react-admin-dashboard.netlify.app/
 
 # git clone https://github.com/hamzaSorani83/react-admin-dashboard.git
 - npm install
