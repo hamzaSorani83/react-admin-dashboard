@@ -4,7 +4,7 @@ import Dropdown from './Dropdown/Dropdown';
 import notifications from '../../assests/JsonData/notification.json'
 import userMenu from '../../assests/JsonData/user_menus.json'
 import { Link } from 'react-router-dom';
-
+import ThemeMenu from '../ThemeMenu/ThemeMenu';
 const renderNotificationItem = ( item,index ) => {
   return (
     <div className="notification-item" key={index}>
@@ -70,9 +70,7 @@ export default function Topnav() {
           }
         </div>
         <div className="topnav__right-item">
-          {
-            // theme setting
-          }
+          <ThemeMenu />
         </div>
       </div>
     </div>

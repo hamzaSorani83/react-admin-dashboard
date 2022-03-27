@@ -4,10 +4,15 @@ import Sidebar from '../Sidebar/Sidebar'
 import './Layout.css'
 import { BrowserRouter } from 'react-router-dom'
 import Topnav from '../Topnav/Topnav'
+import { useSelector } from 'react-redux';
 
 export default function Layout() {
+  const themeMode = useSelector( ( state ) => state.mode );
+  const themeColor = useSelector( ( state ) => state.color );
+  console.log(themeMode)
+  console.log(themeColor)
   return (
-    <div className="Layout">
+    <div className={`Layout ${themeMode} ${themeColor}`}>
       <BrowserRouter>
         <Sidebar />
         <div className="Layout_Content">

@@ -5,10 +5,8 @@ const clickOutsideRef = ( contentRef,toggleRef ) => {
   document.addEventListener( 'mousedown',( e ) => {
     if ( toggleRef.current && toggleRef.current.contains( e.target ) ) {
       contentRef.current.classList.toggle( 'active' );
-    } else {
-      if ( contentRef.current && !contentRef.current.contains( e.target ) ) {
-        contentRef.current.classList.remove( 'active' );
-      }
+    } else if(contentRef.current && !contentRef.current.contains( e.target ) ){
+      contentRef.current.classList.remove( 'active' );
     }
   })
 } 
@@ -16,7 +14,8 @@ const clickOutsideRef = ( contentRef,toggleRef ) => {
 export default function Dropdown( props ) {
   const dropdownToggleEl = useRef( null );
   const dropdownContentEl = useRef( null );
-  clickOutsideRef(dropdownContentEl, dropdownToggleEl)
+  clickOutsideRef( dropdownContentEl,dropdownToggleEl );
+  
   return (
     <div className="dropdown">
       <button ref={dropdownToggleEl} className="dropdown__toggle">
