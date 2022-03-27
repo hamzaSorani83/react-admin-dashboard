@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, { useRef } from 'react'
 import './Sidebar.css'
 import sidebar_items_json from '../../assests/JsonData/sidebar_routes.json'
 import { NavLink } from 'react-router-dom';
@@ -16,6 +16,7 @@ const SidebarItem = ( { icon,title } ) => {
 
 export default function Sidebar() {
   const sidebarRef = useRef();
+  
   const handleToggleSidebar = () => {
     sidebarRef.current.classList.toggle( 'close' );
     sidebarRef.current.classList.toggle( 'open' );
@@ -26,15 +27,23 @@ export default function Sidebar() {
     );
   }
   
-  useEffect(() => {
+  const handleMouseEnter = () => {
     if ( window.innerWidth > 768 ) {
-      sidebarRef.current.classList.toggle("open");
+      sidebarRef.current.classList.add( 'open' );
+      sidebarRef.current.classList.remove( "close" );
+      document.documentElement.style.setProperty("--sidebar-width","300px");
     }
-  })
+  }
   
-  
+  const handleMouseLeave = () => {
+    if ( window.innerWidth > 768 ) {
+      sidebarRef.current.classList.add( "close" );
+      sidebarRef.current.classList.remove( "open" );
+      document.documentElement.style.setProperty( "--sidebar-width","100px" );
+    }
+  }
   return (
-    <div ref={sidebarRef} className="sidebar">
+    <div ref={sidebarRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="sidebar close">
       <div className="Sidebar_Logo">
         <i className="bx bxs-dashboard" onClick={handleToggleSidebar}></i>
         <span> Admin Dashboard </span>

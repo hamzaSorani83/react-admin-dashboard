@@ -47,7 +47,7 @@ export default function Topnav() {
   return (
     <div className="topnav">
       <div className="topnav__search">
-        <input type="text" placeholder='Search here....' name="search" id="search" />
+        <input type="text" placeholder='Search ....' name="search" id="search" />
         <i className="bx bx-search"></i>
       </div>
       <div className="topnav__right">

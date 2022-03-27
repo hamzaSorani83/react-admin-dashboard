@@ -10,6 +10,7 @@
     z-index: 1;
     transition: color 0.5s ease 0s;
     margin-bottom: 30px;
+    max-height: 122px;
 }
 
 .status-card__icon {
@@ -63,7 +64,7 @@
 @media (min-width: 1000px) and (max-width: 1200px) {
     .status-card__info>h4,
     .status-card__icon {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
@@ -71,18 +72,22 @@
     .status-card {
         padding-left: 10px
     }
-    .status-card__info>h4,
-    .status-card__icon {
-        font-size: 25px;
-    }
 }
 
 @media (max-width: 850px) {
     .status-card {
         padding-left: 10px
     }
-    .status-card__info>h4,
-    .status-card__icon {
-        font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .status-card__info>h4 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .status-card__info>h4 {
+        font-size: 25px;
     }
 }
