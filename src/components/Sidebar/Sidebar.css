@@ -9,7 +9,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
-    transition: all .5s;
+    transition: all .7s;
     padding-left: 30px;
 }
 
@@ -94,7 +94,7 @@
     letter-spacing: -1px;
     font-size: 20px;
     word-spacing: -1px;
-    transition: all .5s;
+    transition: opacity .5s;
 }
 
 .Sidebar_Item_Inner {

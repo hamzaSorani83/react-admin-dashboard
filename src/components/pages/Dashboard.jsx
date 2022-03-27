@@ -193,8 +193,6 @@ export default function Dashboard() {
             }
           </div>
         </div>
-      </div>
-      <div className="row">
         <div className="col-4 ">
           <div className="card ">
             <div className="card__header">
