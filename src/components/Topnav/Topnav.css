@@ -87,3 +87,23 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+@media (max-width: 550px) {
+    .topnav {
+        padding: 0;
+        gap: 0 10px;
+    }
+    .topnav__right {
+        max-width: 200px;
+        padding-right: 10px;
+    }
+    .topnav__right-user__name {
+        display: none;
+    }
+    .topnav__search {
+        width: 50px;
+    }
+    .topnav__search>i {
+        right: 13px;
+    }
+}
