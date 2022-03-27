@@ -43,9 +43,8 @@
     border-radius: 50%;
     background-image: linear-gradient( to top right, var(--main-color), var(--second-color));
     position: absolute;
-    left: -50%;
+    left: -55%;
     top: 0;
-    /* transform: scale(0); */
     transition: transform 0.8s ease 0s;
     z-index: -1;
 }
@@ -62,7 +61,7 @@
     align-items: stretch;
 }
 
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 900px) and (max-width: 1200px) {
     .status-card__info>h4,
     .status-card__icon {
         font-size: 28px;

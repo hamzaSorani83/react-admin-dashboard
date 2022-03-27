@@ -35,19 +35,19 @@ body {
     --main-color-blue: #349eff;
     --second-color-blue: #62b4ff;
     /*  */
-    --main-color-red: #fb594d;
+    --main-color-red: #ff055a;
     --second-color-red: #ff3157;
     /*  */
     --main-color-cyan: #10d4d2;
     --second-color-cyan: #2ae9e6;
     /*  */
-    --main-color-green: #019707;
-    --second-color-green: #4caf50;
+    --main-color-green: #99f2c8;
+    --second-color-green: #23e3ae;
     /*  */
-    --main-color-orange: #d68102;
+    --main-color-orange: #FFB830;
     --second-color-orange: #fca11a;
     /*  */
-    --sidebar-width: 100px;
+    --sidebar-width: 300px;
     --border-radius: 15px;
     --topnav-height: 110px;
     --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
