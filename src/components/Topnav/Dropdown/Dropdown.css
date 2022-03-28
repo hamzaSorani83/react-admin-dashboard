@@ -33,7 +33,7 @@ button.dropdown__toggle>i {
 div.dropdown__content {
     position: absolute;
     top: calc(100% + 5px);
-    right: 0;
+    right: -34px;
     width: max-content;
     max-width: 330px;
     background-color: var(--main-bg);
