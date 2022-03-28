@@ -53,7 +53,7 @@ export default function Sidebar() {
   return (
     <div ref={sidebarRef} className="sidebar open" >
       <div className="Sidebar_Logo">
-        <i className="bx bxs-dashboard" onClick={handleToggleSidebar}></i>
+        <i className="bx bx-menu" onClick={handleToggleSidebar}></i>
         <span> Admin Dashboard </span>
       </div>
       {sidebar_items_json.map((item, index) => {
