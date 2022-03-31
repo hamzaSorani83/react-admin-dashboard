@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    transition: all .5s;
+    transition: opacity .5s;
 }
 
 .sidebar::before {
@@ -113,7 +113,7 @@
 
 .Sidebar_Item_Inner>span {
     text-transform: capitalize;
-    transition: all .5s;
+    transition: opacity .5s;
 }
 
 .Sidebar_Item_Inner:hover {
